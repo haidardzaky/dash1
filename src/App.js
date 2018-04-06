@@ -1,14 +1,15 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { 
+import {
   Row,
   Col,
-  Button, 
-  FormGroup, 
-  FormControl, 
-  ControlLabel 
+  Button,
+  FormGroup,
+  FormControl,
+  ControlLabel
 } from "react-bootstrap";
 import "./App.css";
+import BlockButton from './components/BlockButton';
 
 class App extends Component {
   constructor(props) {
@@ -59,14 +60,7 @@ class App extends Component {
                         type="password"
                       />
                     </FormGroup>
-                    <Button
-                      block
-                      bsSize="large"
-                      disabled={!this.validateForm()}
-                      type="submit"
-                    >
-                      Login
-                    </Button>
+                    <BlockButton />
                   </form>
                 </div>
                 <div className="right">
