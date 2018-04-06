@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { Button } from "react-bootstrap";
 
-export default class BlockButton extends component {
+export default class SubmitButton extends Component {
   render(){
-    return(<div className="well">
+    return(<div>
     <Button bsStyle="warning" bsSize="large" block type="submit">
       Submit
     </Button>
