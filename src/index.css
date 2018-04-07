@@ -3,3 +3,36 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.site-wrapper{
+	background:url(./assets/images/background.png);
+  height:100vh;
+  display: flex;
+  align-items: flex-start;
+}
+
+
+.flex-container{
+	display: flex;
+  justify-content: center;
+  align-self: center;
+  margin: auto;
+  width: 80%;
+}
+.left, .right{
+	display: flex;
+  flex-direction: column;
+
+  padding:7rem;
+}
+.left{
+  background-color: black;
+  color:white;
+	text-align:center;
+  border-radius: 10px 0px 0px 10px;
+  opacity: 0.7;
+}
+.right{
+    background:#fff;
+    border-radius: 0px 10px 10px 0px;
+}

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import SubmitButton from '../components/SubmitButton';
 import {
   Row,
   Col,
@@ -9,7 +10,7 @@ import {
 } from "react-bootstrap";
 
 export default class LoginForm extends Component {
-  render(){
+
     constructor(props) {
       super(props);
 
@@ -32,7 +33,9 @@ export default class LoginForm extends Component {
     handleSubmit = event => {
       event.preventDefault();
     }
-    
+
+    render(){
+
     return(
       <div className="">
         <div className="welcome-title">Welcome Partner!</div>
